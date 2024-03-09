@@ -1,0 +1,27 @@
+@use "../../../theme/utils";
+
+@mixin button() {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.buttons {
+  @include utils.flex-row-justify(center);
+  height: 80px;
+  transform: translate(0px, -40px);
+
+  &__container {
+    @include utils.flex-row-align-justify(center, space-around);
+    width: 60%;
+    padding: 15px;
+    border-radius: 5px;
+    &__button {
+      &__item {
+        @include button();
+        &__icon {
+          padding-inline: 5px;
+        }
+      }
+    }
+  }
+}

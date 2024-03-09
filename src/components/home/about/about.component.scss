@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .about {
+    background-color: lightgray;
+    width: 60%;
+    &__title {
+      text-align: center;
+    }
+
+    &__content {
+      padding: 15px;
+    }
+  }
+}
